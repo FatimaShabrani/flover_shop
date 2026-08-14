@@ -1,0 +1,153 @@
+.Group-Flower {
+    display: flex;
+    gap :50px;
+    justify-content:center;
+}
+
+.flower-card img {
+    width: 1000px;
+    height: 1000px;
+}
+
+.featured-Flower h2 {
+    text-align: center;
+    padding: 15px 30px;
+     font-size: 80px;
+     color: #606C38;
+}
+
+
+ .nav-links {
+    display: flex;
+    gap: 100px;
+    margin-left: 350px;
+    
+ }
+ nav {
+    display: flex;
+    align-items:center;
+    padding: 15px 30px;
+    gap: 1000px;
+ }
+
+ .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo  img{
+   width: 200px;
+    height: 200px;
+    object-fit: contain;
+    
+}
+  
+
+.hero-image {
+    position: relative;
+    
+}
+
+.hero-content {
+    position: absolute;
+    left: 50%;
+   top: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 2000px;
+     object-fit: cover;
+    animation: flowerZoom 2s ease;
+}
+
+.nav-links a {
+    font-size: 80px;
+    text-decoration: none;
+     font-weight: bold;
+     cursor: pointer;
+
+}
+
+.logo h1{
+     font-size: 80px;
+}
+.hero h1{
+     font-size: 200px;
+     text-align: center;
+     font-family: Georgia;
+     color: #FFF8F0;
+}
+
+.hero p{
+     font-size: 100px;
+     text-align: center;
+     color: #FFF8F0;
+}
+.hero-content a{
+     font-size: 150px;
+    
+}
+
+.hero-content a {
+    display: inline-block;
+    padding: 14px 30px;
+    background-color: #8B5E83;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 60px;
+    font-weight: bold;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+body {
+    font-family: Arial;
+}
+
+.featured-Flower {
+     text-align: center;
+     font-size: 60px;
+} 
+
+.featured-Flower image {
+     text-align: center;
+    
+
+}
+ .flower-card h3 {
+    color: #4A3B3B;
+}
+
+.flower-card p {
+    color: #6B5B53;
+}
+.nav-links a:hover {
+    color: #606C38;
+}
+.flower-card {
+    text-align: center;
+    transition: 0.3s;
+}
+
+
+.flower-card:hover {
+    transform: scale(1.05);
+}
+
+@keyframes flowerZoom {
+    from {
+        transform: scale(1.05);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.hero-content a:hover {
+    transform: translateY(-3px);
+}
