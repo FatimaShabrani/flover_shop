@@ -106,11 +106,13 @@ text-align: center;
 }
 body {
     font-family: Arial;
+    
 }
 
 .featured-Flower {
      text-align: center;
      font-size: 60px;
+     background-color: #f7f8f3;
 } 
 
 .featured-Flower image {
@@ -151,3 +153,57 @@ body {
 .hero-content a:hover {
     transform: translateY(-3px);
 }
+
+.category-group {
+   display: flex;
+    gap :50px;
+    justify-content:center;
+
+}
+
+.category-group img {
+   width: 1000px;
+    height: 1000px;
+    object-fit: cover;
+    gap: 100px;
+    
+}
+.Category {
+    text-align: center;
+    transition: 0.3s;
+}
+
+.Category h3 {
+    text-align: center;
+    padding: 15px 30px;
+     font-size: 80px;
+     color: #606C38;
+}
+
+.Category:hover {
+    transform: scale(1.05);
+}
+
+@keyframes flowerZoom {
+    from {
+        transform: scale(1.05);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+.categories h2{
+   text-align: center;
+    padding: 15px 30px;
+     font-size: 80px;
+     color: #606C38;
+}
+
+
+.categories{
+    padding: 100px;
+    background-color: #dfe5d2;
+    padding-bottom: 70px;
+}
+
