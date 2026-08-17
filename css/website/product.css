@@ -15,6 +15,9 @@ body{
     color: #fffff0;
     align-items: center;
 }
+.logo img{
+    width: 100px;
+}
 
 .hero_content {
     display: flex;
