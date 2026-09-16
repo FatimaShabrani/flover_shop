@@ -1,122 +1,506 @@
-<!DOCTYPE html> 
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
+
 <head>
-    <title>Flover flower</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flover Flower</title>
+
     <link rel="stylesheet" href="../../css/website/style.css">
+
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
 
 <body>
-    <!--create a nav shortcut to navigation swap btween pages 
-   then create a div " privecy box " to name store because when we need to control in css direct add name is div-->
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
     <nav>
+
+        <!-- Logo and Store Name -->
         <div class="logo">
-             <img src="../../images/WhatsApp Image 2026-08-14 at 15.22.26.jpeg" alt="Flover logo">
+
+            <img src="../../images/logo.png" alt="Flover logo">
+
             <h1>Flover</h1>
+
         </div>
-<!--add a class inside the unorderd list nav because when we need to control in css just write name the class--> 
-    <ul class="nav-links">
-        <li> <a href="index.html">Home</a> </li>
-        <li><a href="product-details.html">Product</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="checkout.html">checkout</a></li>
-        <li><a href="cart.html">cart</a></li>
-        <li><a href="confirmation.html">confirmation</a></li>
-        
-    </ul>
-    </nav>
-<!--  قسمنا الصفحة الى سيكشن ومجموعات  مشان نتحكم بالعناصر كل اشي لحال --> 
-     <section class ="hero">
-                
-    
-                <div class="hero-image">
-                    <img src="../../images/WhatsApp Image 2026-08-14 at 23.56.38.jpeg" alt="Flowers">
-                    <div class ="hero-content">
-                 <h1>Flover Flower </h1>
-                 <p>Make Every Moment Bloom 
-Beautiful flowers & gifts for every special moment.</p>
-                
-                <a href="product-details.html">Shop now</a>
 
-                </div>
 
-                </div>
+        <!-- Menu Button for Mobile -->
+        <button class="menu-toggle"  id="menuToggle">☰</button>
 
-    <section class="categories">
-     <h2>Explore Our Collection</h2>
 
-    <div class="category-group">
+        <!-- Navigation Links -->
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="product.html">Product</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+            <li>
+                <a href="checkout.html">Checkout</a>
+            </li>
+
+             <li>
+                <a href="confirmation.html">Confirmation</a>
+            </li>
+
+           <li>
+    <a href="cart.html" class="cart-button" aria-label="Shopping Cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+            <path d="M3 4H5L7 16H19L21 8H6"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"/>
+            <circle cx="9" cy="20" r="1.5" fill="currentColor"/>
+            <circle cx="17" cy="20" r="1.5" fill="currentColor"/>
+        </svg>
+    </a>
+</li>
+
+            <!--search--> 
+       <button class="search-button" id="searchButton" aria-label="Search">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+        <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
+        <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2"/>
+    </svg>
+</button>
+
+
+        </ul>
 
        
+    </nav>
 
 
-        <div class="Category">
-            <img src="../../images/باقة بيضا.jpg" alt="Bouquets">
-            <h3>💐 Bouquets</h3>
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <section class="hero">
+
+        <div class="hero-image">
+
+            <img
+                src="../../images/WhatsApp Image 2026-08-14 at 23.56.38.jpeg"
+                alt="Flowers"
+            >
+
+            <div class="hero-content">
+
+                <h1>Flover Flower</h1>
+
+                <p>
+                    Make Every Moment Bloom
+                    <br>
+                    Beautiful flowers & gifts for every special moment.
+                </p>
+
+                <a href="product.html">Shop Now</a>
+
+            </div>
+
         </div>
 
-        <div class="Category">
-            <img src="../../images/تخرج.jpg" alt="Graduation">
-            <h3>🎓 Graduation</h3>
+    </section>
+
+
+    <!-- =========================
+         CATEGORIES
+    ========================== -->
+
+    <section class="categories">
+
+        <h2>Explore Our Collection</h2>
+
+        <div class="category-group">
+
+
+            <div class="category">
+
+                <img
+                    src="../../images/باقة بيضا.jpg"
+                    alt="Bouquets"
+                >
+
+                <h3>💐 Bouquets</h3>
+
+            </div>
+
+
+            <div class="category">
+
+                <img
+                    src="../../images/تخرج.jpg"
+                    alt="Graduation"
+                >
+
+                <h3>🎓 Graduation</h3>
+
+            </div>
+
+
+            <div class="category">
+
+                <img
+                    src="../../images/دب ززرد.jpg"
+                    alt="Teddy Bears"
+                >
+
+                <h3>🧸 Teddy Bears</h3>
+
+            </div>
+
+
+            <div class="category">
+
+                <img
+                    src="../../images/ميلادg.jpg"
+                    alt="Gift Boxes"
+                >
+
+                <h3>🎁 Gift Boxes</h3>
+
+            </div>
+
+
         </div>
 
-        <div class="Category">
-            <img src="../../images/دب ززرد.jpg" alt="Teddy Bears">
-            <h3>🧸 Teddy Bears</h3>
+    </section>
+
+
+    <!-- =========================
+         FEATURED FLOWERS
+    ========================== -->
+
+    <section class="featured-Flower">
+
+        <h2>Featured Bouquets</h2>
+
+
+        <div class="group-Flower">
+
+
+            <!-- Flower 1 -->
+            <div class="flower-card">
+
+                <img
+                    src="../../images/BlushCrushBouquet.gpg.webp"
+                    alt="Green Rose"
+                >
+
+                <h3>Green Rose</h3>
+
+                <p>10 JD</p>
+
+            </div>
+
+
+            <!-- Flower 2 -->
+            <div class="flower-card">
+
+                <img
+                    src="../../images/flover-product-mazzo-di-fiori-ethereal-1.GPG.webp"
+                    alt="Lily"
+                >
+
+                <h3>Lily</h3>
+
+                <p>25 JD</p>
+
+            </div>
+
+
+            <!-- Flower 3 -->
+            <div class="flower-card">
+
+                <img
+                    src="../../images/flover-product-lovely-c-sugar-bloom-1.webp"
+                    alt="Orange Rose"
+                >
+
+                <h3>Orange Rose</h3>
+
+                <p>30 JD</p>
+
+            </div>
+
+
+           
+
+            
+
+
         </div>
 
-        <div class="Category">
-            <img src="../../images/ميلادg.jpg" alt="Gift Boxes">
-            <h3>🎁 Gift Boxes</h3>
+    </section>
+
+     <!-- =========================
+         Graduate FLOWERS
+    ========================== -->
+
+    <section class=" graduate-flowers">
+
+        <h2> Graduate FLOWERS</h2>
+
+
+        <div class="group-graduate">
+
+
+            <!-- Flower 1 -->
+            <div class="graduate-card">
+
+                <img
+                    src="../../images/بوكيه تخرج.png"
+                    alt="Graduate1"
+                >
+
+                <h3>Graduate1</h3>
+
+                <p>10 JD</p>
+
+            </div>
+
+
+            <!-- Flower 2 -->
+            <div class="graduate-card">
+
+                <img
+                    src="../../images/تخرج 2.jpg"
+                    alt="Lily"
+                >
+
+                <h3>Graduate2</h3>
+
+                <p>25 JD</p>
+
+            </div>
+
+
+            <!-- Flower 3 -->
+            <div class="graduate-card">
+
+                <img
+                    src="../../images/تخرج 5.jpg"
+                    alt="Orange Rose"
+                >
+
+                <h3>Graduate3</h3>
+
+                <p>65 JD</p>
+
+            </div>
+
+
+           
+
+
         </div>
+
+    </section>
+
+     <!-- =========================
+         Teady FLOWERS
+    ========================== -->
+
+    <section class="teddy-Flower">
+
+        <h2>Teddy Bears</h2>
+
+
+        <div class="group-teddy">
+
+
+            <!-- teddy 1 -->
+            <div class="teddy-card">
+
+                <img
+                    src="../../images/BlushCrushBouquet.gpg.webp"
+                    alt="Green Rose"
+                >
+
+                <h3>Green Rose</h3>
+
+                <p>10 JD</p>
+
+            </div>
+
+
+            <!-- teddy  2 -->
+            <div class="teddy-card">
+
+                <img
+                    src="../../images/flover-product-mazzo-di-fiori-ethereal-1.GPG.webp"
+                    alt="Lily"
+                >
+
+                <h3>Lily</h3>
+
+                <p>25 JD</p>
+
+            </div>
+
+
+            <!--teddy  3 -->
+            <div class="teddy-card">
+
+                <img
+                    src="../../images/flover-product-lovely-c-sugar-bloom-1.webp"
+                    alt="Orange Rose"
+                >
+
+                <h3>Orange Rose</h3>
+
+                <p>30 JD</p>
+
+            </div>
+
+
+           
+
+
+        </div>
+
+    </section>
+
+<!--==================
+Gift Boxes
+====================-->
+
+    <section class="gift-Flower">
+
+        <h2>Gift Boxes</h2>
+
+
+        <div class="group-gift">
+
+
+            <!-- gift 1 -->
+            <div class="gift-card">
+
+                <img
+                    src="../../images/BlushCrushBouquet.gpg.webp"
+                    alt="Green Rose"
+                >
+
+                <h3>Green Rose</h3>
+
+                <p>10 JD</p>
+
+            </div>
+
+
+            <!-- gift 2 -->
+            <div class="gift-card">
+
+                <img
+                    src="../../images/flover-product-mazzo-di-fiori-ethereal-1.GPG.webp"
+                    alt="Lily"
+                >
+
+                <h3>Lily</h3>
+
+                <p>25 JD</p>
+
+            </div>
+
+
+            <!-- gift 3 -->
+            <div class="gift-card">
+
+                <img
+                    src="../../images/flover-product-lovely-c-sugar-bloom-1.webp"
+                    alt="Orange Rose"
+                >
+
+                <h3>Orange Rose</h3>
+
+                <p>30 JD</p>
+
+            </div>
+
+
+           
+
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        <!--footer brand -->
+        <div class="footer-brand">
+
+        <h2>Flover</h2>
+        <p>Make Every Moment Bloom</p>
 
     </div>
-</section>
+ <!--footer lin;s-->
+    <div class="footer-links">
 
-     </section>
+    <h3>Quick Links</h3>
 
-     <section class="featured-Flower"> 
-        <h2>Featured Bouquets</h2> 
-
-
-<div class="Group-Flower">
-
-
-        <div class="flower-card">
-            <img src="../../images/BlushCrushBouquet.gpg.webp" alt="Rose">
-            <h3>Green Rose</h3>
-            <p> 10 JD</p>
-        </div>
-
-         <div class="flower-card">
-         <img src="../../images/flover-product-mazzo-di-fiori-ethereal-1.GPG.webp" alt="Rose">
-          <h3>Lily</h3>
-          <P>25  JD</P>
-         </div>
-
-         <div class="flower-card">
-          <img src="../../images/flover-product-lovely-c-sugar-bloom-1.webp" alt="Rose">
-           <h3>Orange Rose</h3>
-           <P> 30 JD</P>
-         </div>
-
-         <div class="flower-card">
-          <img src="../../images/bouquet-of-white-roses_1.webp" alt="Rose">
-           <h3>Tulip</h3>
-           <P> 35 JD</P>
-         </div>
- 
-
-         <div class="flower-card">
-          <img src="../../images/bq2547_1200.jpg" alt="Rose">
-           <h3>Daisy</h3>
-           <P>  40 JD</P>
-         </div>
-
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
 
 </div>
-     </section>
+ <!--footer category-->
+<div class="footer-links">
+    <h3>Our Collection</h3>
+
+    <a href="products.html">Bouquets</a>
+    <a href="products.html">Graduation</a>
+    <a href="products.html">Teddy Bears</a>
+    <a href="products.html">Gift Boxes</a>
+</div>
+ <!--footer contact-->
+
+<div class="footer-contact">
+    <h3>Contact Us</h3>
+    <p>info@flover.com</p>
+    <p>+962 795308649</p>
+</div>
+ <!--footer social-->
+<div class="footer-social">
+    <h3>Follow Us</h3>
+    <a href="flover@">Instagram</a>
+     <a href="#">Facebook</a>
+     <a href="#">TikTok</a>
+</div>
+    </footer>
+
+
+
+
+    <script src="../../js/website/main.js"></script>
+
 
 </body>
 
