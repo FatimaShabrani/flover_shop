@@ -63,3 +63,9 @@ decreaseButton.addEventListener("click", function () {
         quantityElement.textContent = quantityNumber;
     }
 });
+
+fetch("../../php/products.php")
+    .then(response => response.json())
+    .then(products => {
+        console.log(products);
+    });
