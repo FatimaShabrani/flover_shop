@@ -3,7 +3,7 @@
         <div class="footer_col brand_col">
           <div class="footer_logo">
             <img
-              src="../../images/logo/upscalemedia-transformed (1).png"
+              src="../../../images/logo/upscalemedia-transformed (1).png"
               alt="Flover Logo"
             />
             <h2>Flover</h2>
