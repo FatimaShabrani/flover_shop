@@ -25,77 +25,7 @@
          NAVIGATION
     ========================== -->
 
-    <nav>
-
-        <!-- Logo and Store Name -->
-        <div class="logo">
-
-            <img src="../../images/logo.png" alt="Flover logo">
-
-            <h1>Flover</h1>
-
-        </div>
-
-
-        <!-- Menu Button for Mobile -->
-        <button class="menu-toggle"  id="menuToggle">☰</button>
-
-
-        <!-- Navigation Links -->
-        <ul class="nav-links" id="navLinks">
-
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-
-            <li>
-                <a href="product.html">Product</a>
-            </li>
-
-            <li>
-                <a href="about.html">About</a>
-            </li>
-
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
-
-            <li>
-                <a href="checkout.html">Checkout</a>
-            </li>
-
-             <li>
-                <a href="confirmation.html">Confirmation</a>
-            </li>
-
-           <li>
-    <a href="cart.html" class="cart-button" aria-label="Shopping Cart">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-            <path d="M3 4H5L7 16H19L21 8H6"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"/>
-            <circle cx="9" cy="20" r="1.5" fill="currentColor"/>
-            <circle cx="17" cy="20" r="1.5" fill="currentColor"/>
-        </svg>
-    </a>
-</li>
-
-            <!--search--> 
-       <button class="search-button" id="searchButton" aria-label="Search">
-    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-        <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/>
-        <line x1="16.5" y1="16.5" x2="21" y2="21" stroke="currentColor" stroke-width="2"/>
-    </svg>
-</button>
-
-
-        </ul>
-
-       
-    </nav>
-
+  <?php include "../../components/website/header.php"; ?>
 
     <!-- =========================
          HERO SECTION
@@ -451,51 +381,9 @@ Gift Boxes
 
     </section>
 
-
-    <footer>
-        <!--footer brand -->
-        <div class="footer-brand">
-
-        <h2>Flover</h2>
-        <p>Make Every Moment Bloom</p>
-
-    </div>
- <!--footer lin;s-->
-    <div class="footer-links">
-
-    <h3>Quick Links</h3>
-
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-
-</div>
- <!--footer category-->
-<div class="footer-links">
-    <h3>Our Collection</h3>
-
-    <a href="products.html">Bouquets</a>
-    <a href="products.html">Graduation</a>
-    <a href="products.html">Teddy Bears</a>
-    <a href="products.html">Gift Boxes</a>
-</div>
- <!--footer contact-->
-
-<div class="footer-contact">
-    <h3>Contact Us</h3>
-    <p>info@flover.com</p>
-    <p>+962 795308649</p>
-</div>
- <!--footer social-->
-<div class="footer-social">
-    <h3>Follow Us</h3>
-    <a href="flover@">Instagram</a>
-     <a href="#">Facebook</a>
-     <a href="#">TikTok</a>
-</div>
-    </footer>
-
+<!--========
+================footer========-->
+   <?php include "../../components/website/footer.php"; ?>
 
 
 

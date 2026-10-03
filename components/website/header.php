@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Flover-Cart</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../css/website/style.css">
-</head>
-<body>
-     <!-- =========================
+ <!-- =========================
          NAVIGATION
     ========================== -->
 
@@ -32,15 +22,15 @@
         <ul class="nav-links" id="navLinks">
 
             <li>
-                <a href="index.html">Home</a>
+                <a href="index.php">Home</a>
             </li>
 
             <li>
-                <a href="product.html">Product</a>
+               <a href="product-details.html">Product</a>
             </li>
 
             <li>
-                <a href="about.html">About</a>
+                <a href="about.php">About</a>
             </li>
 
             <li>
@@ -56,7 +46,7 @@
             </li>
 
            <li>
-    <a href="cart.html" class="cart-button" aria-label="Shopping Cart">
+    <a href="cart.php" class="cart-button" aria-label="Shopping Cart">
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
             <path d="M3 4H5L7 16H19L21 8H6"
                   stroke="currentColor"
@@ -82,35 +72,3 @@
 
        
     </nav>
-
-    <h1>Shopping Cart</h1>
-    <section class="cart">
-        <div class="cart-items">
-
-    <div class="cart-item">
-        <img src="../../images/bouquet-of-white-roses_1.webp" alt="Rose Bouquet">
-        <div class="cart-item-info">
-        <h3>Rose Bouquet</h3>
-        <p>Price: 25 JD</p>
-        <div class="quantity-controls">
-    <button class="decrease">−</button>
-    <span class="quantity">1</span>
-    <button class="increase">+</button>
-</div>
-        <button class="remove-item">Remove</button>
-    </div>
-    </div>
-
-</div>
-
-        <div class="cart-summary">
-         <h2>Cart Summary</h2>
-        <p>Total: <span id="cart-total">0 JD</span></p>
-        <a href="checkout.html">Checkout</a>
-        </div>
-    </section>
-
-    <script src="../../js/website/main.js"></script>
-</body>
-
-</html>
