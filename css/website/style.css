@@ -440,8 +440,8 @@ gift-Flower
 footer {
     display: flex;
     justify-content: center;
-    gap: 200px;
-    padding: 200px;
+    gap: 80px;
+    padding: 80px;
     background-color: #606C38;
     color: white;
     font-family: 'Lora', serif;
@@ -461,12 +461,12 @@ footer a:hover {
     color: #dfe5d2;
 }
 footer h3 {
-    font-size: 30px;
+    font-size: 22px;
     margin-bottom: 10px;
     font-family: 'Cormorant Garamond', serif;
 }
 footer h2 {
-    font-size: 45px;
+    font-size: 25px;
     margin-bottom: 10px;
     font-family: 'Cormorant Garamond', serif; 
 }
@@ -1123,3 +1123,285 @@ body > h1 {
         width: 100%;
     }
 }
+/* =========================
+   Checkout Page
+========================= */
+
+.checkout-page {
+    max-width: 1050px;
+    margin: 55px auto 70px;
+    padding: 0 30px;
+}
+
+.checkout-title {
+    text-align: center;
+    color: #606C38;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 44px;
+    margin-bottom: 35px;
+}
+
+.checkout-container {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 25px;
+}
+
+.checkout-form,
+.order-summary {
+    background: #f8f8f2;
+    padding: 22px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.checkout-form h2,
+.order-summary h2 {
+    color: #4A3B3B;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 28px;
+    margin-bottom: 22px;
+}
+
+.checkout-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #6B5B53;
+    font-weight: 600;
+}
+
+.checkout-form input {
+    width: 100%;
+    padding: 13px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #c9cdbd;
+    border-radius: 8px;
+    background: white;
+    font-family: "Lora", serif;
+    box-sizing: border-box;
+}
+
+.checkout-form input:focus {
+    outline: none;
+    border-color: #8A9565;
+}
+
+.place-order {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #8A9565;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.place-order:hover {
+    opacity: 0.9;
+}
+
+.order-summary {
+    height: fit-content;
+}
+
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #d5d8c9;
+    font-size: 20px;
+    font-weight: bold;
+    color: #606C38;
+}
+
+@media (max-width: 768px) {
+
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+
+    .checkout-title {
+        font-size: 38px;
+    }
+
+    .checkout-page {
+        padding: 0 20px;
+    }
+}
+
+
+/* =========================
+   Confirmation Page
+========================= */
+
+.confirmation-page {
+    min-height: calc(100vh - 180px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 20px;
+    box-sizing: border-box;
+}
+
+.confirmation-card {
+    width: min(650px, 100%);
+    text-align: center;
+    background: #f8f6ef;
+    padding: 55px 45px;
+    border-radius: 24px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.success-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+    background: #dfe5d2;
+
+    color: #606C38;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.confirmation-card h1 {
+    margin-bottom: 15px;
+
+    color: #606C38;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.confirmation-main {
+    margin-bottom: 12px;
+
+    color: #333;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.confirmation-text {
+    max-width: 500px;
+    margin: 0 auto;
+
+    color: #666;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.confirmation-divider {
+    width: 80px;
+    height: 1px;
+
+    margin: 30px auto;
+
+    background: #c8ccb9;
+}
+
+.confirmation-message {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    max-width: 480px;
+    margin: 0 auto 35px;
+
+    text-align: left;
+}
+
+.confirmation-message span {
+    font-size: 28px;
+}
+
+.confirmation-message p {
+    margin: 0;
+
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.confirmation-message strong {
+    color: #606C38;
+}
+
+.continue-shopping {
+    display: inline-block;
+
+    padding: 13px 30px;
+
+    background: #8B5E83;
+    color: white;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+.continue-shopping:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+
+
+/* =========================
+   Confirmation Responsive
+========================= */
+
+@media (max-width: 600px) {
+
+    .confirmation-page {
+        padding: 45px 15px;
+    }
+
+    .confirmation-card {
+        padding: 40px 22px;
+    }
+
+    .confirmation-card h1 {
+        font-size: 42px;
+    }
+
+    .confirmation-main {
+        font-size: 18px;
+    }
+
+    .confirmation-message {
+        text-align: center;
+        flex-direction: column;
+    }
+
+}
+
+.order-details {
+    max-width: 420px;
+    margin: 0 auto 30px;
+    padding: 18px 22px;
+    background: #eef0e7;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.order-details p {
+    margin: 8px 0;
+    color: #555;
+    font-size: 15px;
+}
+
+.order-details strong {
+    color: #606C38;
+}
+
+

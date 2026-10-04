@@ -37,7 +37,7 @@
                 Total: <span id="cart-total">0 JD</span>
             </p>
 
-            <a href="checkout.html">Checkout</a>
+            <a href="checkout.php">Checkout</a>
 
         </div>
 
@@ -48,6 +48,7 @@
     
    <script src="../../js/website/main.js?v=2"></script>
    <script src="../../js/website/cart.js"></script>
+   
 </body>
 
 </html>

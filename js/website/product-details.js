@@ -1,9 +1,11 @@
+
 const params = new URLSearchParams(window.location.search);
 const productId = params.get("id");
 
 fetch(`../../php/product.php?id=${productId}`)
     .then(response => response.json())
     .then(product => {
+        
 
         const productDetails = document.getElementById("productDetails");
 
@@ -37,9 +39,9 @@ fetch(`../../php/product.php?id=${productId}`)
                         Available: ${product.stock}
                     </p>
 
-                    <button class="add-to-cart" id="addToCart">
-                     Add to Cart
-                    </button>
+                    <button class="add-to-cart" id="addToCart" ${product.stock <= 0 ? "disabled" : ""}>
+    ${product.stock <= 0 ? "Out of Stock" : "Add to Cart"}
+</button>
                 </div>
 
             </section>
@@ -47,6 +49,10 @@ fetch(`../../php/product.php?id=${productId}`)
                const addToCartButton = document.getElementById("addToCart");
 
 addToCartButton.addEventListener("click", () => {
+
+    if (product.stock <= 0) {
+        return;
+    }
 
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
@@ -64,6 +70,11 @@ addToCartButton.addEventListener("click", () => {
     }
 
     localStorage.setItem("cart", JSON.stringify(cart));
+   addToCartButton.textContent = "Added to Cart ✓";
+
+setTimeout(() => {
+    addToCartButton.textContent = "Add to Cart";
+}, 1000);
 
 });
     });

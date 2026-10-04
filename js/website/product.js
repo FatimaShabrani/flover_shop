@@ -29,6 +29,13 @@ fetch("../../php/products.php")
                             ${product.category}
                         </p>
 
+                        <p class="product-stock">
+    ${product.stock > 0
+        ? `Available: ${product.stock}`
+        : `Out of Stock`
+    }
+</p>
+
                         <p class="description">
                             ${product.description}
                         </p>
@@ -39,8 +46,7 @@ fetch("../../php/products.php")
                                 <span>${product.price}</span>
                                 <small>JOD</small>
                             </div>
-
-                            <a href="product.php?id=${product.id}" class="details">
+<a href="product.php?id=${product.id}" class="details">
     View details
     <span>→</span>
 </a>
