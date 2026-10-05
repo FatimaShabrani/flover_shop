@@ -1,6 +1,7 @@
 <?php
 
 require_once "../../php/db.php";
+require_once "../../php/models/orders/orders.php";
 
 $orderId = $_GET["order_id"] ?? null;
 
@@ -8,15 +9,8 @@ $order = null;
 
 if ($orderId) {
 
-    $sql = "SELECT * FROM orders WHERE id = :id";
-
-    $stmt = $connection->prepare($sql);
-
-    $stmt->execute([
-        ":id" => $orderId
-    ]);
-
-    $order = $stmt->fetch(PDO::FETCH_ASSOC);
+    $orders = new Orders($connection);
+    $order = $orders->getOrderById($orderId)[0];
 }
 
 ?>
