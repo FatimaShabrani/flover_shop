@@ -33,5 +33,20 @@ class Product
 
     return $products;
 }
+
+
+public function updateStock($productId, $quantity)
+{
+    $sql = "UPDATE products
+            SET stock = stock - :quantity
+            WHERE id = :product_id";
+
+    $stmt = $this->connection->prepare($sql);
+
+    $stmt->execute([
+        ":quantity" => $quantity,
+        ":product_id" => $productId
+    ]);
+}
 }
 

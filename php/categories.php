@@ -1,14 +1,13 @@
 <?php
 
 require_once "db.php";
+require_once "models/Category.php";
 
 header("Content-Type: application/json");
 
-$sql = "SELECT * FROM categories";
+$categoryModel = new Category($connection);
 
-$stmt = $connection->query($sql);
-
-$categories = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$categories = $categoryModel->getAll();
 
 echo json_encode($categories);
 
