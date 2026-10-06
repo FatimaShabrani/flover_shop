@@ -1,17 +1,15 @@
 <?php
 
 require_once "db.php";
+require_once "models/Product.php";
 
 header("Content-Type: application/json");
 
 $id = $_GET["id"] ?? 0;
 
-$sql = "SELECT * FROM products WHERE id = ?";
+$productModel = new Product($connection);
 
-$stmt = $connection->prepare($sql);
-$stmt->execute([$id]);
-
-$product = $stmt->fetch(PDO::FETCH_ASSOC);
+$product = $productModel->getById($id);
 
 echo json_encode($product);
 
