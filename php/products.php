@@ -1,14 +1,13 @@
 <?php
 
 require_once "db.php";
+require_once "models/Product.php";
 
 header("Content-Type: application/json");
 
-$sql = "SELECT * FROM products";
+$productModel = new Product($connection);
 
-$stmt = $connection->query($sql);
-
-$products = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$products = $productModel->getAll();
 
 echo json_encode($products);
 
