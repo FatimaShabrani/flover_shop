@@ -21,9 +21,9 @@ const categoriesContainer = document.getElementById("categoriesContainer");
 
 if (categoriesContainer) {
 
-    fetch("../../php/categories.php")
-        .then(response => response.json())
-        .then(categories => {
+   axios.get("../../php/categories.php")
+    .then(response => {
+        const categories = response.data;
 
             categoriesContainer.innerHTML = "";
 
@@ -61,9 +61,9 @@ function loadProductsByCategory(categoryId, containerId) {
         return;
     }
 
-    fetch("../../php/products.php")
-        .then(response => response.json())
-        .then(products => {
+    axios.get("../../php/products.php")
+    .then(response => {
+        const products = response.data;
 
             const categoryProducts = products.filter(
                 product => Number(product.category_id) === Number(categoryId)

@@ -1,6 +1,6 @@
-fetch("../../php/products.php")
-    .then(response => response.json())
-    .then(products => {
+axios.get("../../php/products.php")
+    .then(response => {
+        const products = response.data;
 
         const productsContainer = document.getElementById("productsContainer");
 

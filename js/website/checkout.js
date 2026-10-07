@@ -42,15 +42,9 @@ const orderData = {
     cart: cart
 };
 
-fetch("../../php/place_order.php", {
-    method: "POST",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    body: JSON.stringify(orderData)
-})
-.then(response => response.json())
-.then(data => {
+axios.post("../../php/place_order.php", orderData)
+.then(response => {
+    const data = response.data;
 
     if (data.success) {
 

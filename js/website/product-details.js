@@ -2,9 +2,9 @@
 const params = new URLSearchParams(window.location.search);
 const productId = params.get("id");
 
-fetch(`../../php/product.php?id=${productId}`)
-    .then(response => response.json())
-    .then(product => {
+axios.get(`../../php/product.php?id=${productId}`)
+    .then(response => {
+        const product = response.data;
         
 
         const productDetails = document.getElementById("productDetails");
