@@ -12,9 +12,10 @@
 
     <link rel="stylesheet" href="../../css/website/style.css">
 
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -25,8 +26,7 @@
          NAVIGATION
     ========================== -->
 
-  <?php include "../../components/website/header.php"; ?>
-
+    <?php include __DIR__ . '/common/layout/navbar.php'; ?>
     <!-- =========================
          HERO SECTION
     ========================== -->
@@ -35,10 +35,7 @@
 
         <div class="hero-image">
 
-            <img
-                src="../../images/WhatsApp Image 2026-08-14 at 23.56.38.jpeg"
-                alt="Flowers"
-            >
+            <img src="../../images/WhatsApp Image 2026-08-14 at 23.56.38.jpeg" alt="Flowers">
 
             <div class="hero-content">
 
@@ -63,13 +60,13 @@
          CATEGORIES
     ========================== -->
 
-   <section class="categories">
-    <h2>Explore Our Collection</h2>
+    <section class="categories">
+        <h2>Explore Our Collection</h2>
 
-    <div class="category-group" id="categoriesContainer">
-        <!-- Categories will be loaded from the database -->
-    </div>
-</section>
+        <div class="category-group" id="categoriesContainer">
+            <!-- Categories will be loaded from the database -->
+        </div>
+    </section>
 
 
     <!-- =========================
@@ -77,40 +74,39 @@
     ========================== -->
 
     <section class="featured-Flower">
-    <h2>Featured Bouquets</h2>
+        <h2>Featured Bouquets</h2>
 
-    <div class="group-Flower" id="featuredProducts"></div>
-</section>
-     <!-- =========================
+        <div class="group-Flower" id="featuredProducts"></div>
+    </section>
+    <!-- =========================
          Teady FLOWERS
     ========================== -->
 
     <section class="teddy-Flower">
-    <h2>Teddy Bears</h2>
+        <h2>Teddy Bears</h2>
 
-    <div class="group-teddy" id="teddyProducts"></div>
-</section>
+        <div class="group-teddy" id="teddyProducts"></div>
+    </section>
 
-<!--==================
+    <!--==================
 Gift Boxes
 ====================-->
 
-   <section class="gift-Flower">
-    <h2>Gift Boxes</h2>
+    <section class="gift-Flower">
+        <h2>Gift Boxes</h2>
 
-    <div class="group-gift" id="giftProducts"></div>
-</section>
+        <div class="group-gift" id="giftProducts"></div>
+    </section>
 
 
-<section class="graduate-flowers">
-    <h2>Graduate FLOWERS</h2>
+    <section class="graduate-flowers">
+        <h2>Graduate FLOWERS</h2>
 
-    <div class="group-graduate" id="graduationProducts"></div>
-</section>
-<!--========
+        <div class="group-graduate" id="graduationProducts"></div>
+    </section>
+    <!--========
 ================footer========-->
-   <?php include "../../components/website/footer.php"; ?>
-
+    <?php include __DIR__ . '/common/layout/footer.php'; ?>
 
 
     <script src="../../js/website/main.js"></script>
