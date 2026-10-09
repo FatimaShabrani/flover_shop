@@ -6,7 +6,7 @@
   <nav>
     <!-- Logo and Store Name -->
     <div class="logo">
-      <img src="../../../images/logo/full-logo-white.svg" alt="Flover Logo">
+      <img src="../../../../images/logo/logo-icon1.svg" alt="Flover Logo">
       <h1>Flover</h1>
     </div>
 
@@ -35,9 +35,6 @@
         <a href="checkout.html">Checkout</a>
       </li>
 
-      <li>
-        <a href="confirmation.html">Confirmation</a>
-      </li>
 
       <li>
         <a href="cart.html" class="cart-button" aria-label="Shopping Cart">
