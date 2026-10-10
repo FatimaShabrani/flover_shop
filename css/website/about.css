@@ -32,55 +32,198 @@ a {
   color: inherit;
 }
 
-.navbar {
+h1,
+h2,
+h3,
+.logo {
+  font-family: "Cormorant Garamond", serif;
+}
+
+img {
   width: 100%;
-  height: 80px;
+  display: block;
+}
 
-  background-color: #ffffff;
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* =========================
+   NAVIGATION
+========================= */
 
+nav {
+  font-family: "Lora", serif;
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  padding: 0 7%;
-
+  padding: 15px 30px;
   position: relative;
-  z-index: 10;
+  z-index: 1000;
+  direction: ltr;
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  display: block;
+}
+
+.logo h1 {
+  font-family: "Cormorant Garamond", serif;
   font-size: 42px;
   font-weight: 600;
-  color: #3f543f;
+  color: #606c38;
+  margin: 0;
 }
 
 .nav-links {
-  list-style: none;
-
   display: flex;
   align-items: center;
-  gap: 35px;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links a {
-  color: #3f493f;
-  font-size: 15px;
-
-  transition: 0.3s ease;
-}
-
-.nav-links a:hover,
-.nav-links a.active {
+  font-family: "Lora", serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
   color: #606c38;
+  white-space: nowrap;
 }
 
+.nav-links a:hover {
+  color: #4a3b3b;
+}
+
+.cart-button,
+.search-button {
+  border: none;
+  background: none;
+  color: #606c38;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  width: 30px;
+  height: 22px;
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #606c38;
+  border-radius: 3px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-toggle span:nth-child(1) {
+  top: 0px;
+}
+
+.menu-toggle span:nth-child(2) {
+  top: 9px;
+}
+
+.menu-toggle span:nth-child(3) {
+  top: 18px;
+}
+
+.menu-toggle.active span:nth-child(1) {
+  top: 9px;
+  transform: rotate(135deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.menu-toggle.active span:nth-child(3) {
+  top: 9px;
+  transform: rotate(-135deg);
+}
+
+@media (max-width: 800px) {
+  nav {
+    padding: 12px 18px;
+  }
+
+  .logo img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .logo h1 {
+    font-size: 30px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgb(249, 249, 220);
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    gap: 18px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+    transition:
+      max-height 0.4s ease-in-out,
+      padding 0.3s ease;
+  }
+
+  .nav-links.active {
+    max-height: 400px;
+    padding: 20px 0;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+}
 .about-hero {
   min-height: 75vh;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
+  /**/
   text-align: center;
 
   padding: 100px 20px;
@@ -94,8 +237,15 @@ a {
 
 .hero-content {
   max-width: 850px;
-}
+  width: 100%;
 
+  /* أضفنا هذه الخواص لتوسيط جميع العناصر عمودياً وتحت بعضها */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 .small-title,
 .section-label {
   font-size: 13px;
