@@ -18,6 +18,7 @@
 
     <div id="productDetails"></div>
 
+  <script src="../../js/website/main.js?v=2"></script>
     <script src="../../js/website/product-details.js"></script>
 
 </body>

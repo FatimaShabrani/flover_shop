@@ -1,0 +1,237 @@
+
+/* ========================================
+   FLOVER — OLIVE HERO
+======================================== */
+
+.hero.hero-split {
+    display: grid;
+    grid-template-columns: 0.92fr 1.08fr;
+    width: 100%;
+   min-height: clamp(420px, 65vh, 550px);
+    background: #e9eddf;
+    overflow: hidden;
+}
+
+/* ========================================
+   TEXT CONTENT
+======================================== */
+
+.hero.hero-split .hero-content {
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: auto;
+    padding: 32px 28px;
+
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+.hero-eyebrow {
+    margin-bottom: 14px;
+    color: #737d50;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+
+.hero.hero-split .hero-content h1 {
+    margin: 0 0 13px;
+    color: #465332;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(38px, 4.5vw, 62px);
+    font-weight: 600;
+    line-height: 1.05;
+}
+
+.hero-tagline {
+    margin: 0 0 12px;
+    color: #68734a;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(23px, 2.6vw, 34px);
+    line-height: 1.2;
+}
+
+.hero.hero-split .hero-content .hero-description {
+    max-width: 350px;
+    margin: 0 0 22px;
+    color: #656b58;
+    font-family: 'Lora', serif;
+    font-size: clamp(13px, 1.2vw, 15px);
+    line-height: 1.8;
+}
+
+/* ========================================
+   SHOP BUTTON
+======================================== */
+
+.hero.hero-split .hero-content a {
+    display: inline-block;
+    padding: 12px 24px;
+    border: 1px solid #606c38;
+    border-radius: 4px;
+    background: #606c38;
+    color: #fffdf5;
+
+    font-family: 'Lora', serif;
+    font-size: 13px;
+    text-decoration: none;
+
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.hero.hero-split .hero-content a:hover {
+    background: #465332;
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   IMAGE AREA
+======================================== */
+
+.hero.hero-split .hero-image {
+    position: relative;
+    min-width: 0;
+    min-height: 320px;
+    overflow: hidden;
+    background: #e9eddf;
+}
+
+/* One image rule only */
+
+.hero.hero-split .hero-image img {
+    
+    position: absolute;
+    top: 50%;
+    left: 46%;
+
+    width: 88%;
+    height: 90%;
+    max-width: 520px;
+
+    object-fit: contain;
+    object-position: center;
+
+    /* No rectangular frame */
+    border: none;
+    border-radius: 0;
+
+    /* Subtle floating effect */
+    filter: drop-shadow(
+        0 12px 18px rgba(70, 83, 50, 0.12)
+    );
+
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+
+    transition: opacity 0.7s ease,
+                transform 1s ease;
+}
+
+/* Slider transition */
+
+.hero.hero-split .hero-image img.changing {
+    opacity: 0.15;
+    transform: translate(-50%, -50%) scale(1.02);
+}
+
+
+/* ========================================
+   FLOVER — MOBILE HERO
+======================================== */
+
+@media (max-width: 768px) {
+    .hero.hero-split {
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    /* Image first on mobile */
+    .hero.hero-split .hero-image {
+        order: -1;
+        min-height: 0;
+        height: 230px;
+        background: #e9eddf;
+    }
+
+    .hero.hero-split .hero-image img {
+        top: 50%;
+        left: 50%;
+        width: 88%;
+        height: 100%;
+        max-width: 360px;
+        object-fit: contain;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .hero.hero-split .hero-image img.changing {
+        transform: translate(-50%, -50%) scale(1.02);
+    }
+
+    /* Compact text area */
+    .hero.hero-split .hero-content {
+        order: 0;
+        align-items: center;
+        padding: 20px 22px 30px;
+        text-align: center;
+    }
+
+    .hero-eyebrow {
+        margin-bottom: 10px;
+        font-size: 9px;
+        letter-spacing: 2px;
+    }
+
+    .hero.hero-split .hero-content h1 {
+        margin-bottom: 8px;
+        font-size: clamp(36px, 8vw, 46px);
+    }
+
+    .hero-tagline {
+        margin-bottom: 8px;
+        font-size: 24px;
+    }
+
+    .hero.hero-split .hero-content .hero-description {
+        max-width: 310px;
+        margin-bottom: 17px;
+        font-size: 12px;
+        line-height: 1.7;
+    }
+
+    .hero.hero-split .hero-content a {
+        padding: 11px 23px;
+        font-size: 12px;
+    }
+}
+
+/* Small phones */
+
+@media (max-width: 420px) {
+    .hero.hero-split .hero-image {
+        height: 205px;
+    }
+
+    .hero.hero-split .hero-image img {
+        width: 90%;
+        height: 100%;
+    }
+
+    .hero.hero-split .hero-content {
+        padding: 18px 16px 25px;
+    }
+
+    .hero.hero-split .hero-content h1 {
+        font-size: 34px;
+    }
+
+    .hero-tagline {
+        font-size: 22px;
+    }
+}

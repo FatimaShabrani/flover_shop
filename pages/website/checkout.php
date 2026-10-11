@@ -106,7 +106,7 @@
     </main>
 
     <?php include "../../components/website/footer.php"; ?>
-
+ <script src="../../js/website/main.js?v=2"></script>
      <script src="../../js/website/checkout.js"></script>
 
 

@@ -11,20 +11,20 @@
 
     <h3>Quick Links</h3>
 
-    <a href="index.html">Home</a>
-    <a href="products.html">Products</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <a href="index.php">Home</a>
+    <a href="products.php">Products</a>
+    <a href="about.php">About</a>
+    <a href="contact.php">Contact</a>
 
 </div>
  <!--footer category-->
 <div class="footer-links">
     <h3>Our Collection</h3>
 
-    <a href="products.html">Bouquets</a>
-    <a href="products.html">Graduation</a>
-    <a href="products.html">Teddy Bears</a>
-    <a href="products.html">Gift Boxes</a>
+    <a href="product.php">Bouquets</a>
+    <a href="product.php">Graduation</a>
+    <a href="product.php">Teddy Bears</a>
+    <a href="product.php">Gift Boxes</a>
 </div>
  <!--footer contact-->
 

@@ -85,7 +85,7 @@ if ($orderId) {
 </div>
 
     </main>
-
+ <script src="../../js/website/main.js?v=2"></script>
     <?php include "../../components/website/footer.php"; ?>
 
 </body>

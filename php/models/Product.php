@@ -34,6 +34,22 @@ class Product
     return $products;
 }
 
+public function search($keyword)
+{
+    $sql = "SELECT * FROM products
+            WHERE name LIKE :keyword
+            OR description LIKE :keyword
+            OR category LIKE :keyword";
+
+    $stmt = $this->connection->prepare($sql);
+
+    $stmt->execute([
+        ":keyword" => "%" . $keyword . "%"
+    ]);
+
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
+
 
 public function updateStock($productId, $quantity)
 {
