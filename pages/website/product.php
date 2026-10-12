@@ -18,9 +18,12 @@
 
     <div id="productDetails"></div>
 
-  <script src="../../js/website/main.js?v=2"></script>
-    <script src="../../js/website/product-details.js"></script>
+ <script src="../../js/website/main.js?v=2"></script>
 
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+
+<script src="../../js/website/product-details.js"></script>
 </body>
 
 </html>

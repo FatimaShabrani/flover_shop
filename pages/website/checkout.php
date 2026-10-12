@@ -105,9 +105,14 @@
 
     </main>
 
-    <?php include "../../components/website/footer.php"; ?>
- <script src="../../js/website/main.js?v=2"></script>
-     <script src="../../js/website/checkout.js"></script>
+      <?php include "../../components/website/footer.php"; ?>
+
+   
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="../../js/website/checkout.js"></script>
+    <script src="../../js/website/main.js?v=2"></script>
+
 
 
 

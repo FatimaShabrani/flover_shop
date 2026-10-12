@@ -1851,3 +1851,65 @@ body > h1 {
     overflow: visible;
     padding-bottom: 20px;
 }
+
+/* ==============================
+   FLOVER CART NOTIFICATION
+============================== */
+
+.flover-toast {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    z-index: 9999;
+
+    max-width: min(380px, calc(100% - 32px));
+    padding: 16px 22px;
+
+    background: #606C38;
+    color: #ffffff;
+
+    border: 1px solid #dfe5d2;
+    border-radius: 12px;
+
+    font-family: "Lora", serif;
+    font-size: 14px;
+    line-height: 1.6;
+
+    box-shadow: 0 8px 24px rgba(40, 50, 25, 0.18);
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition:
+        opacity 0.25s ease,
+        transform 0.25s ease,
+        visibility 0.25s ease;
+}
+
+.flover-toast.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.flover-toast.error {
+    background: #8B5E83;
+    border-color: #e7d7e1;
+}
+
+@media (max-width: 600px) {
+    .flover-toast {
+        top: 14px;
+        right: 12px;
+        max-width: calc(100% - 24px);
+        padding: 13px 16px;
+        font-size: 13px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .flover-toast {
+        transition: none;
+    }
+}

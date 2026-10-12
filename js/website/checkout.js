@@ -42,15 +42,15 @@ const orderData = {
     cart: cart
 };
 
-fetch("../../php/place_order.php", {
-    method: "POST",
+
+axios.post("../../php/place_order.php", orderData, {
     headers: {
         "Content-Type": "application/json"
-    },
-    body: JSON.stringify(orderData)
+    }
 })
-.then(response => response.json())
-.then(data => {
+.then(response => {
+
+    const data = response.data;
 
     if (data.success) {
 
@@ -70,7 +70,11 @@ fetch("../../php/place_order.php", {
 
     console.error("Error:", error);
 
-    alert("Something went wrong. Please try again.");
+    alert(
+        error.response?.data?.message ||
+        "Something went wrong. Please try again."
+    );
 
 });
+
 });

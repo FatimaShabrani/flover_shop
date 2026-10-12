@@ -1,7 +1,5 @@
 ﻿
-// ==============================
-// Mobile Menu
-// ==============================
+
 
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
@@ -13,9 +11,7 @@ if (menuToggle && navLinks) {
 }
 
 
-// ==============================
-// Load Categories
-// ==============================
+
 
 const categoriesContainer = document.getElementById("categoriesContainer");
 
@@ -43,9 +39,7 @@ if (categoriesContainer) {
             });
 
             
-            // ==============================
-            // Category Reveal Animation
-            // ==============================
+            
 
             const categoriesSection =
                 categoriesContainer.closest(".categories");
@@ -95,9 +89,7 @@ if (categoriesContainer) {
 
 
 
-// ==============================
-// Load Home Products
-// ==============================
+
 
 function loadProductsByCategory(categoryId, containerId) {
 
@@ -116,8 +108,7 @@ function loadProductsByCategory(categoryId, containerId) {
                 throw new Error("Invalid products data");
             }
 
-            // Show only products selected for the home page
-            // and belonging to the requested category
+           
             const categoryProducts = products.filter(product =>
                 Number(product.category_id) === Number(categoryId) &&
                 Number(product.show_on_home) === 1
