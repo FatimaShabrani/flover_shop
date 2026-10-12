@@ -1,7 +1,4 @@
 
-/* ========================================
-   FLOVER — OLIVE HERO
-======================================== */
 
 .hero.hero-split {
     display: grid;
@@ -12,9 +9,6 @@
     overflow: hidden;
 }
 
-/* ========================================
-   TEXT CONTENT
-======================================== */
 
 .hero.hero-split .hero-content {
     position: relative;
@@ -65,9 +59,7 @@
     line-height: 1.8;
 }
 
-/* ========================================
-   SHOP BUTTON
-======================================== */
+
 
 .hero.hero-split .hero-content a {
     display: inline-block;
@@ -90,9 +82,7 @@
     transform: translateY(-2px);
 }
 
-/* ========================================
-   IMAGE AREA
-======================================== */
+
 
 .hero.hero-split .hero-image {
     position: relative;
@@ -102,7 +92,6 @@
     background: #e9eddf;
 }
 
-/* One image rule only */
 
 .hero.hero-split .hero-image img {
     
@@ -117,11 +106,11 @@
     object-fit: contain;
     object-position: center;
 
-    /* No rectangular frame */
+   
     border: none;
     border-radius: 0;
 
-    /* Subtle floating effect */
+    
     filter: drop-shadow(
         0 12px 18px rgba(70, 83, 50, 0.12)
     );
@@ -133,7 +122,6 @@
                 transform 1s ease;
 }
 
-/* Slider transition */
 
 .hero.hero-split .hero-image img.changing {
     opacity: 0.15;
@@ -141,9 +129,7 @@
 }
 
 
-/* ========================================
-   FLOVER — MOBILE HERO
-======================================== */
+
 
 @media (max-width: 768px) {
     .hero.hero-split {
@@ -152,7 +138,7 @@
         min-height: auto;
     }
 
-    /* Image first on mobile */
+    
     .hero.hero-split .hero-image {
         order: -1;
         min-height: 0;
@@ -174,7 +160,7 @@
         transform: translate(-50%, -50%) scale(1.02);
     }
 
-    /* Compact text area */
+    
     .hero.hero-split .hero-content {
         order: 0;
         align-items: center;
@@ -211,7 +197,7 @@
     }
 }
 
-/* Small phones */
+
 
 @media (max-width: 420px) {
     .hero.hero-split .hero-image {

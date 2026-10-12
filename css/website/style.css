@@ -13,9 +13,7 @@ body {
     padding: 0;
     background-color: #dfe5d2;
 }
-/* =========================
-   FLOWER GROUP
-========================= */
+
 
 .group-Flower {
     display: flex;
@@ -29,9 +27,7 @@ body {
     object-fit: cover;
 }
 
-/* =========================
-   Graduate GROUP
-========================= */
+
 
 .group-graduate{
     display: flex;
@@ -44,9 +40,8 @@ body {
     height: 320px;
     object-fit: cover;
 }
-/* =========================
-   Teddy GROUP
-========================= */
+
+
 
 .group-teddy {
     display: flex;
@@ -61,9 +56,7 @@ body {
 
 }
 
-/* =========================
-   Gift GROUP
-========================= */
+
 
 .group-gift {
     display: flex;
@@ -79,9 +72,7 @@ body {
 }
 
 
-/* =========================
-   NAVIGATION
-========================= */
+
 
 nav {
     font-family: 'Lora', serif;
@@ -132,9 +123,7 @@ nav {
 }
 
 
-/* =========================
-   MENU BUTTON
-========================= */
+
 
 .menu-toggle {
     display: none;
@@ -149,9 +138,7 @@ nav {
 
 
 
-/* =========================
-   FEATURED FLOWERS
-========================= */
+
 
 body {
     font-family: Arial;
@@ -198,9 +185,7 @@ body {
     color: #606C38;
 }
 
-/*==================
-Graduate flowers
-====================*/
+
 .graduate-flowers {
      text-align: center;
     font-size: 60px;
@@ -243,9 +228,7 @@ Graduate flowers
     font-family: 'Cormorant Garamond', serif;
 }
 
-/*===================
-Teddy bears
-=================*/
+
 .teddy-Flower {
     text-align: center;
     font-size: 60px;
@@ -287,9 +270,7 @@ Teddy bears
     font-family: 'Cormorant Garamond', serif;
 }
 
-/*===========
-gift-Flower
-==============*/
+
 
 .gift-Flower {
     text-align: center;
@@ -335,9 +316,6 @@ gift-Flower
 
 
 
-/* =========================
-   CATEGORIES
-========================= */
 
 .categories {
     padding: 60px 40px;
@@ -427,9 +405,7 @@ gift-Flower
 
 
 
-/* =========================
- Footer
-========================= */
+
 footer {
     display: flex;
     justify-content: center;
@@ -463,9 +439,7 @@ footer h2 {
     margin-bottom: 10px;
     font-family: 'Cormorant Garamond', serif; 
 }
-/*============
-search
-==============*/
+
 
 .search-button {
     background: transparent;
@@ -516,9 +490,7 @@ search
     }
 }
 
-/* =========================
-   SHOPPING CART
-========================= */
+
 
 .cart {
     display: flex;
@@ -646,13 +618,11 @@ body > h1 {
 
 
 
-/* =========================
-   RESPONSIVE DESIGN
-========================= */
+
 
 @media (max-width: 768px) {
 
-    /* NAVIGATION */
+   
     nav {
         padding: 10px 20px;
         position: relative;
@@ -694,7 +664,7 @@ body > h1 {
     }
 
 
-    /* HERO */
+   
 
    .hero-image img {
     width: 100%;
@@ -785,8 +755,7 @@ body > h1 {
         font-size: 16px;
     }
 
-    /*graduate*/
-       
+    
 
     .graduate-flowers{
         padding: 40px 20px;
@@ -818,7 +787,7 @@ body > h1 {
         font-size: 16px;
     }
 
-    /*teddy*/
+    
 
     .teddy-Flower{
         padding: 40px 20px;
@@ -852,8 +821,7 @@ body > h1 {
 
 
 
-     /*gift-Flower*/
-
+     
       .gift-Flower{
         padding: 40px 20px;
         font-size: 20px;
@@ -909,9 +877,7 @@ body > h1 {
 
 }
 
-/* =========================
-   ABOUT PAGE
-========================= */
+
 
 .about-hero {
     text-align: center;
@@ -953,9 +919,6 @@ body > h1 {
     color: #6B5B53;
 }
 
-/* =========================
-   PRODUCT DETAILS
-========================= */
 
 .product-details {
     width: 88%;
@@ -967,7 +930,7 @@ body > h1 {
     align-items: center;
 }
 
-/* Product Image */
+
 
 .product-image {
     width: 100%;
@@ -988,7 +951,7 @@ body > h1 {
     box-sizing: border-box;
 }
 
-/* Product Information */
+
 
 .product-info {
     padding: 20px 10px;
@@ -1036,7 +999,7 @@ body > h1 {
     margin-bottom: 30px;
 }
 
-/* Add To Cart Button */
+
 
 .add-to-cart {
     display: inline-block;
@@ -1058,9 +1021,7 @@ body > h1 {
     opacity: 0.9;
 }
 
-/* =========================
-   TABLET
-========================= */
+
 
 @media (max-width: 900px) {
 
@@ -1086,9 +1047,7 @@ body > h1 {
 
 }
 
-/* =========================
-   MOBILE
-========================= */
+
 
 @media (max-width: 600px) {
 
@@ -1128,9 +1087,7 @@ body > h1 {
         width: 100%;
     }
 }
-/* =========================
-   Checkout Page
-========================= */
+/
 
 .checkout-page {
     max-width: 1050px;
@@ -1238,9 +1195,7 @@ body > h1 {
 }
 
 
-/* =========================
-   Confirmation Page
-========================= */
+
 
 .confirmation-page {
     min-height: calc(100vh - 180px);
@@ -1361,9 +1316,7 @@ body > h1 {
 }
 
 
-/* =========================
-   Confirmation Responsive
-========================= */
+
 
 @media (max-width: 600px) {
 
@@ -1413,9 +1366,7 @@ body > h1 {
 
 
 
-/* ==============================
-   FLOVER PRODUCT CARDS
-   ============================== */
+
 
 .group-Flower,
 .group-teddy,
@@ -1430,7 +1381,7 @@ body > h1 {
     align-items: stretch;
 }
 
-/* Product Card */
+
 .product_cards {
     width: 100%;
     min-width: 0;
@@ -1448,7 +1399,7 @@ body > h1 {
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
 }
 
-/* Make the whole card clickable */
+
 .product-card-link {
     display: flex;
     flex-direction: column;
@@ -1458,7 +1409,7 @@ body > h1 {
     text-decoration: none;
 }
 
-/* Product Image */
+
 .product_cards .bouquet_image {
     width: 100%;
     height: 270px;
@@ -1511,7 +1462,7 @@ body > h1 {
     font-weight: 700;
 }
 
-/* Description */
+
 .product_cards .description {
     color: #555;
     font-size: 0.98rem;
@@ -1519,7 +1470,7 @@ body > h1 {
     margin: 0 0 20px;
 }
 
-/* Price and Details */
+
 .product_cards .card-bottom {
     display: flex;
     align-items: baseline;
@@ -1549,7 +1500,7 @@ body > h1 {
     text-decoration: none;
 }
 
-/* Tablet */
+
 @media (max-width: 768px) {
     .group-Flower,
     .group-teddy,
@@ -1569,7 +1520,7 @@ body > h1 {
     }
 }
 
-/* Mobile */
+
 @media (max-width: 480px) {
     .group-Flower,
     .group-teddy,
@@ -1618,7 +1569,6 @@ body > h1 {
 
 
 
-/* Fix product card text alignment */
 .product_cards .bouquet-content {
     text-align: right;
     direction: rtl;
@@ -1749,7 +1699,6 @@ body > h1 {
     outline-offset: 4px;
 }
 
-/* Mobile */
 @media (max-width: 480px) {
     .see-more-container {
         margin: 20px auto 30px;
@@ -1835,7 +1784,7 @@ body > h1 {
 
 
 
-/* Mobile horizontal scrolling */
+
 @media (max-width: 480px) {
 
     .group-Flower,
